@@ -32,5 +32,5 @@ class Integrante(models.Model):
     funcao = models.CharField(max_length=255)
     banda = models.ForeignKey(Banda, on_delete=models.CASCADE)
 
-    # def __str__(self):
-    #     return self.nome
+    def __str__(self):
+        return self.nome
